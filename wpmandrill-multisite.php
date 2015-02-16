@@ -49,6 +49,15 @@ class WP_Mandrill_Multisite {
 			// we should not continue if wpMandrill is not setup in the main site 
 			return; 
 		}
+
+		// the current blog ID
+		$current_blog_id = get_current_blog_id();
+
+		// allow propagation to be disabled for a particular site, or for the entire network
+		$allow_propagation = apply_filters('wpmandrill_multisite_propagation', true, $current_blog_id);
+		if ( !$allow_propagation ) {
+			return;
+		}
 		
 		// get mandrill settings from subsite 
 		$mandrill_settings = get_option('wpmandrill'); 
@@ -60,6 +69,9 @@ class WP_Mandrill_Multisite {
 			// use the from name and email from the subsite
 			$mandrill_settings['from_name'] = get_bloginfo('name'); 
 			$mandrill_settings['from_username'] = get_bloginfo('admin_email'); 
+
+			// allow wpMandrill settings to be modified for each blog, or for the entire network
+			$mandrill_settings = apply_filters('wpmandrill_multisite_settings', $mandrill_settings, $current_blog_id);
 
 			// save wpMandrill options for the subsite
 			update_option('wpmandrill', $mandrill_settings); 
