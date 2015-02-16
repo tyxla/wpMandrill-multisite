@@ -43,6 +43,11 @@ class WP_Mandrill_Multisite {
 			return;
 		}
 
+		// bail if multisite is not enabled
+		if ( !is_multisite() ) {
+			return;
+		}
+
 		// get mandrill settings from main site 
 		$mainsite_mandrill_settings = get_blog_option(BLOG_ID_CURRENT_SITE, 'wpmandrill'); 
 		if (!$mainsite_mandrill_settings) { 
