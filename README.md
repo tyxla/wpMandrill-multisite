@@ -14,7 +14,7 @@ Automatically propagates the wpMandrill settings from the main site to all subsi
 
 ### Getting Started
 
-Go to Settings -> Mandrill and setup at minimum your API key, FROM name and FROM email. This will have your Mandrill plugin enabled and connected. This is all that is necessary for the wpMandrill Multisite plugin to work. These settings will now be automatically be propagated to the subsites that have no Mandrill settings. You can then manually override them for each site, if you prefer. 
+Go to **Settings -> Mandrill** and setup at minimum your **API key**, **FROM name** and **FROM email**. This will have your Mandrill plugin enabled and connected. This is all that is necessary for the wpMandrill Multisite plugin to work. These settings will now be automatically be propagated to the subsites that have no Mandrill settings. You can then manually override them for each site, if you prefer. 
 
 ### Further customization for developers
 
