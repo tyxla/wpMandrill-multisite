@@ -2,12 +2,12 @@
 /*
 Plugin Name: wpMandrill Multisite
 Description: Automatically propagates the wpMandrill settings from the main site to all subsites, still allowing each subsite to manually override them.
-Version: 1.0.0
+Version: 1.0
 Author: tyxla
 Author URI: https://github.com/tyxla
 License: GPL2
 Requires at least: 3.0
-Tested up to: 4.1
+Tested up to: 4.2
 */
 
 /**
