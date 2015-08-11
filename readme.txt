@@ -2,8 +2,8 @@
 Contributors: tyxla
 Tags: wpmandrill, mandrill, mail, wp_mail, multisite, propagate
 Requires at least: 3.0
-Tested up to: 4.2
-Stable tag: 1.0
+Tested up to: 4.3
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,6 +59,9 @@ If you have an idea for a new feature, or you want to report a bug, feel free to
 https://github.com/tyxla/wpMandrill-multisite/
 
 == Changelog ==
+
+= 1.0.1 =
+Tested with WordPress 4.3.
 
 = 1.0 =
 Initial version.
